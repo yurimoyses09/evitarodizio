@@ -1,8 +1,8 @@
 {
-  "status": "pendente",
+  "status": "verificado",
   "fonte": "https://www.cetsp.com.br (página 'Como Funciona' do Rodízio Municipal, texto copiado em 2026-11-16)",
-  "verificado_em": null,
-  "observacao": "Faixas copiadas do texto do CET. Falta conferir feriados (lista vazia) e exceções antes de mudar o status para 'verificado'. Área vermelha e vias limítrofes: para automóveis, ambas têm restrição no mesmo horário.",
+  "verificado_em": "2026-11-16",
+  "observacao": "Faixas de automóveis conforme texto do CET. Fora de escopo por decisão do usuário, por enquanto: isenções (elétricos, híbridos, PCD, médicos, táxis, motos, escolar, emergência) e feriados/suspensões pontuais (lista vazia). Caminhões não são tratados.",
   "faixas": [
     { "dias": [0], "inicio": "07:00", "fim": "10:00", "finais": [1, 2] },
     { "dias": [0], "inicio": "17:00", "fim": "20:00", "finais": [1, 2] },

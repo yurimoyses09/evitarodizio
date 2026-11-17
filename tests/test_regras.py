@@ -108,7 +108,17 @@ def test_regras_pendentes_nao_sao_usadas(tmp_path):
         carregar_regras(arq)
 
 
-def test_config_real_no_repositorio_ainda_nao_verificada():
-    # Garante que nada roda com regras não conferidas até o preenchimento.
-    with pytest.raises(RegrasNaoVerificadas):
-        carregar_regras()
+def test_config_real_esta_verificada_e_tem_as_faixas_do_cet():
+    regras = carregar_regras()
+    assert regras["status"] == "verificado"
+    assert len(regras["faixas"]) == 10  # 5 dias x 2 períodos
+
+
+def test_config_real_segunda_9h30_final_1_e_restrito():
+    r = esta_em_rodizio(1, datetime(2026, 11, 16, 9, 30))
+    assert r.restrito
+    assert r.proximo_livre == datetime(2026, 11, 16, 10, 0)
+
+
+def test_config_real_sabado_e_livre():
+    assert not esta_em_rodizio(1, datetime(2026, 11, 21, 9, 0)).restrito
