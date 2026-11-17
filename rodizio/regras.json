@@ -1,0 +1,8 @@
+{
+  "status": "pendente",
+  "fonte": "https://www.cetsp.com.br",
+  "verificado_em": null,
+  "observacao": "Preencher 'faixas' e 'feriados' com o calendário oficial do CET e mudar status para 'verificado'. Até lá, o código recusa rodar.",
+  "faixas": [],
+  "feriados": []
+}
