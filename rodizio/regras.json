@@ -1,8 +1,19 @@
 {
   "status": "pendente",
-  "fonte": "https://www.cetsp.com.br",
+  "fonte": "https://www.cetsp.com.br (página 'Como Funciona' do Rodízio Municipal, texto copiado em 2026-11-16)",
   "verificado_em": null,
-  "observacao": "Preencher 'faixas' e 'feriados' com o calendário oficial do CET e mudar status para 'verificado'. Até lá, o código recusa rodar.",
-  "faixas": [],
+  "observacao": "Faixas copiadas do texto do CET. Falta conferir feriados (lista vazia) e exceções antes de mudar o status para 'verificado'. Área vermelha e vias limítrofes: para automóveis, ambas têm restrição no mesmo horário.",
+  "faixas": [
+    { "dias": [0], "inicio": "07:00", "fim": "10:00", "finais": [1, 2] },
+    { "dias": [0], "inicio": "17:00", "fim": "20:00", "finais": [1, 2] },
+    { "dias": [1], "inicio": "07:00", "fim": "10:00", "finais": [3, 4] },
+    { "dias": [1], "inicio": "17:00", "fim": "20:00", "finais": [3, 4] },
+    { "dias": [2], "inicio": "07:00", "fim": "10:00", "finais": [5, 6] },
+    { "dias": [2], "inicio": "17:00", "fim": "20:00", "finais": [5, 6] },
+    { "dias": [3], "inicio": "07:00", "fim": "10:00", "finais": [7, 8] },
+    { "dias": [3], "inicio": "17:00", "fim": "20:00", "finais": [7, 8] },
+    { "dias": [4], "inicio": "07:00", "fim": "10:00", "finais": [9, 0] },
+    { "dias": [4], "inicio": "17:00", "fim": "20:00", "finais": [9, 0] }
+  ],
   "feriados": []
 }
